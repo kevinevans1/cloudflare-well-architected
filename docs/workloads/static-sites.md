@@ -13,7 +13,7 @@ Why Cloudflare over a generic static host: the build output, CDN, edge compute, 
 A typical setup: a push triggers a build, Cloudflare deploys the static output, and requests are served directly from the edge unless they match a Functions route — in which case a Worker executes before falling through to static assets.
 
 ```mermaid
-flowchart LR
+flowchart TD
     Dev[Developer] -->|git push| Repo[Git repository\nGitHub / GitLab]
     Repo -->|webhook triggers build| Build[Cloudflare Pages\nbuild pipeline]
     Build -->|deploys| Static[Static assets\non Cloudflare's network]

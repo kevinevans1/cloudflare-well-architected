@@ -7,7 +7,7 @@ Operational excellence on Cloudflare means treating Workers, R2 buckets, D1 data
 Cloudflare's tooling here is mature — a real Terraform provider, a real CLI with CI/CD integration, a real logging and analytics stack — but none of it is wired together by default. A team that only ever runs `wrangler deploy` from a laptop has working software with no operational scaffolding around it. That gap surfaces at the worst time: during an incident, or an unreviewed change that took down production.
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[Code change] --> B[CI: Wrangler / Workers Builds]
     B --> C[Preview deployment]
     C --> D{Review passes?}
