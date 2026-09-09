@@ -29,6 +29,8 @@ Each workload page follows the same structure:
 | [Event-driven & data pipelines](event-driven-pipelines.md) | Queues, R2, Workers, Durable Objects alarms, Workers AI | Async processing, ETL, ingestion pipelines |
 | [Zero Trust / SASE](zero-trust-sase.md) | Access, Gateway, Tunnel, Cloudflare One Client (formerly WARP) | Internal app access, corporate internet security |
 | [Multi-CDN & hybrid front door](multi-cdn-hybrid.md) | DNS, Load Balancing, Tunnel, CNI | Enterprises running Cloudflare alongside another vendor |
+| [Startup workload](startup-workload.md) | Workers, KV, D1 | Early-stage products optimizing for speed and low fixed cost |
+| [AI & RAG workload](ai-rag-workload.md) | AI Gateway, Workers AI, Vectorize, AI Search, Agents SDK | Chatbots, retrieval-augmented search, AI agents |
 
 None of these are mutually exclusive, or the *only* correct way to build the thing they describe — they're a starting point for a design conversation, not a template to copy verbatim.
 

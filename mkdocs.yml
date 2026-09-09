@@ -93,6 +93,7 @@ nav:
       - Zero Trust / SASE: workloads/zero-trust-sase.md
       - Multi-CDN & Hybrid Front Door: workloads/multi-cdn-hybrid.md
       - Startup Workload: workloads/startup-workload.md
+      - AI & RAG Workload: workloads/ai-rag-workload.md
   - Design Review Checklist: design-review-checklist.md
   - Reference:
       - Glossary: reference/glossary.md

@@ -7,8 +7,14 @@ Terms as used specifically within this framework, each checked against Cloudflar
 **Alarm (Durable Objects)**
 : A scheduled wake-up for a single Durable Object, set with `setAlarm()` and delivered to its `alarm()` handler at (or after) the requested time. Alarms have at-least-once execution and retry automatically with exponential backoff if the handler throws. See [Durable Objects: Alarms API](https://developers.cloudflare.com/durable-objects/api/alarms/).
 
+**AI Gateway**
+: A control layer in front of any model provider (Workers AI or external providers) adding caching, rate limiting, retries/fallback, logging, and cost analytics to every model call. See [AI Gateway](https://developers.cloudflare.com/ai-gateway/).
+
 **Anycast**
 : A network routing technique where the same IP address is announced from many locations, and network routers deliver each request to the topologically nearest one. It's the mechanism behind Cloudflare's network sending a request to the closest available data center. See [What is Anycast?](https://www.cloudflare.com/learning/cdn/glossary/anycast-network/).
+
+**AI Search** *(formerly AutoRAG)*
+: A managed retrieval-augmented generation (RAG) product that automates chunking, embedding, indexing, and hybrid retrieval over your own content. See [AI Search](https://developers.cloudflare.com/ai-search/).
 
 **Binding**
 : The mechanism by which a Worker gets access to a resource — a KV namespace, an R2 bucket, a D1 database, another Worker, a secret — configured declaratively rather than connected to over the network at runtime. See [Workers: Bindings](https://developers.cloudflare.com/workers/runtime-apis/bindings/).
@@ -49,8 +55,14 @@ Terms as used specifically within this framework, each checked against Cloudflar
 **Isolate**
 : The V8 execution context Workers run inside of — a lightweight, memory-isolated sandbox that starts far faster than a container or VM, letting a single machine run many isolates concurrently. See [How Workers works](https://developers.cloudflare.com/workers/reference/how-workers-works/).
 
+**Neuron**
+: The unit Workers AI bills inference against, roughly proportional to compute used per request. See [Workers AI pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/).
+
 **KV (Workers KV)**
 : Cloudflare's globally distributed, eventually-consistent key-value store, optimized for high-volume reads of data that tolerates brief staleness — configuration, feature flags, cached values. See [Workers KV overview](https://developers.cloudflare.com/kv/).
+
+**RAG (Retrieval-Augmented Generation)**
+: An architecture pattern that retrieves relevant content — typically via vector search — and includes it as context in a model call, so the model answers using your own data. See [AI Search](https://developers.cloudflare.com/ai-search/).
 
 **Origin**
 : The server or service that ultimately holds the source of truth for content or application logic that Cloudflare fronts — a traditional web server behind a Route, an existing database behind Hyperdrive, or a private network reachable via Tunnel. See [What is an origin server?](https://www.cloudflare.com/learning/cdn/glossary/origin-server/).
@@ -78,6 +90,9 @@ Terms as used specifically within this framework, each checked against Cloudflar
 
 **Vectorize**
 : Cloudflare's globally distributed vector database, used to store and query embeddings for semantic search, recommendations, or providing an LLM with retrieved context. See [Vectorize overview](https://developers.cloudflare.com/vectorize/).
+
+**Workers AI**
+: Cloudflare's serverless inference product, running open-weight models on Cloudflare's network and billed in Neurons. See [Workers AI](https://developers.cloudflare.com/workers-ai/).
 
 **WebSocket Hibernation**
 : An extension of the standard WebSocket API for Durable Objects that lets an object holding an open WebSocket connection be evicted from memory during idle periods without closing the connection, so it isn't billed for active compute time while idle. See [What are Durable Objects?](https://developers.cloudflare.com/durable-objects/concepts/what-are-durable-objects/).
