@@ -15,6 +15,7 @@ copyright: >-
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -58,7 +59,8 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.highlight
   - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      base_path: ['docs']
   - tables
   - toc:
       permalink: true

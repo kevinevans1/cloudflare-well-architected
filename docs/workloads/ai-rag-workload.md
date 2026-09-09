@@ -1,3 +1,5 @@
+--8<-- "_snippets/disclaimer.md"
+
 # AI & RAG Workload
 
 An AI or retrieval-augmented generation (RAG) workload on Cloudflare composes differently from a typical API — the request path includes a model call (and often a retrieval step before it), both of which are slower, less predictable in cost, and less deterministic than a database query. All five pillars still apply; several of them just have AI-specific failure modes worth naming explicitly.

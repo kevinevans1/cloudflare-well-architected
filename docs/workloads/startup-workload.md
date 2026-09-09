@@ -1,3 +1,5 @@
+--8<-- "_snippets/disclaimer.md"
+
 # Startup Workload
 
 A startup's early workload has a different optimization target than an established one: speed of iteration and low fixed cost matter more than the redundancy and operational maturity a later-stage workload needs. Applying all five pillars at full strength before there's real traffic or revenue is over-engineering — but "ignore the pillars entirely" produces the rebuild-everything-under-pressure outcome this page exists to avoid.
