@@ -2,6 +2,8 @@
 
 # Cloudflare Well-Architected
 
+Welcome — this is a practical, community-maintained guide to designing and reviewing workloads on Cloudflare, written for anyone from a solo developer shipping a first Worker to a team running a formal architecture review. New to some of the terminology? The [Glossary](reference/glossary.md) has you covered.
+
 **Cloudflare Well-Architected** is an independent set of design pillars and review guidance for engineers and architects building a workload on Cloudflare's edge-native, serverless-first platform — Workers, Pages, R2, D1, Durable Objects, Queues — plus the network, security, and Zero Trust products around it.
 
 It follows a pillar-based structure — Reliability, Security, Cost Optimization, Operational Excellence, Performance Efficiency — because a fixed set of lenses applied consistently beats an ad hoc design review. Cloudflare isn't a VM-hour cloud:
