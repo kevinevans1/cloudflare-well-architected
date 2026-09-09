@@ -8,6 +8,20 @@ Cloudflare, Inc. Their use in this repository is purely descriptive/
 nominative — to identify and refer to the products this framework provides
 guidance on — and implies no sponsorship or endorsement.
 
+**Inspiration & attribution.** This framework's structure — a small set of
+architectural pillars (Reliability, Security, Cost Optimization,
+Operational Excellence, Performance Efficiency) applied to a specific
+workload — follows the general "well-architected framework" pattern that
+has become a common, widely-used methodology across the cloud industry for
+architecture design and review. No text, diagrams, or other content is
+copied from any other vendor's materials — every page here is original
+writing grounded in Cloudflare's own public documentation, and the pillar
+guidance has been written specifically for Cloudflare's edge-native,
+serverless-first platform. This project's companion repository,
+[`cloudflare-adoption-framework`](https://github.com/kevinevans1/cloudflare-adoption-framework),
+follows the same approach applied to a phase-based adoption lifecycle for
+org-wide Cloudflare adoption.
+
 **Authorship.** This framework is written and maintained by [Kevin Evans]
 (https://github.com/kevinevans1), a Cloudflare employee, on personal time and
 in a personal capacity. It draws exclusively on Cloudflare's **public**

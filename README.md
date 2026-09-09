@@ -2,10 +2,10 @@
 
 An independent, community-maintained set of pillars and design guidance for
 building reliable, secure, cost-efficient, and performant workloads on
-Cloudflare's developer platform — modeled on the structure of the AWS and
-Azure Well-Architected Frameworks, adapted to Cloudflare's edge-native,
-serverless-first primitives (Workers, Pages, R2, D1, Durable Objects,
-Queues, Zero Trust).
+Cloudflare's developer platform — following the pillar-based
+"well-architected framework" pattern common across the cloud industry,
+adapted to Cloudflare's edge-native, serverless-first primitives (Workers,
+Pages, R2, D1, Durable Objects, Queues, Zero Trust).
 
 **Read it here:** https://kevinevans1.github.io/cloudflare-well-architected/
 
@@ -34,7 +34,7 @@ consolidated [design review checklist](docs/design-review-checklist.md).
 
 See also its companion project, [**Cloudflare Adoption Framework**](https://github.com/kevinevans1/cloudflare-adoption-framework),
 which covers the org-wide adoption lifecycle this framework's pillars plug
-into — the same relationship the Azure Well-Architected Framework has to CAF.
+into.
 
 ## Running the site locally
 

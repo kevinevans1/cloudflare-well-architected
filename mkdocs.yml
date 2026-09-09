@@ -92,6 +92,7 @@ nav:
       - Event-Driven & Data Pipelines: workloads/event-driven-pipelines.md
       - Zero Trust / SASE: workloads/zero-trust-sase.md
       - Multi-CDN & Hybrid Front Door: workloads/multi-cdn-hybrid.md
+      - Startup Workload: workloads/startup-workload.md
   - Design Review Checklist: design-review-checklist.md
   - Reference:
       - Glossary: reference/glossary.md
