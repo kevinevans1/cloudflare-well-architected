@@ -7,10 +7,11 @@ repo_url: https://github.com/kevinevans1/cloudflare-well-architected
 repo_name: kevinevans1/cloudflare-well-architected
 edit_uri: edit/main/docs/
 copyright: >-
-  This is an independent, community-maintained project. It is not produced by,
-  affiliated with, endorsed by, or sponsored by Cloudflare, Inc. "Cloudflare" and
-  related marks are trademarks of Cloudflare, Inc. All product information is
-  sourced from public Cloudflare documentation and linked at point of use.
+  🍁 Written and maintained in Canada. This is an independent, community-maintained
+  project. It is not produced by, affiliated with, endorsed by, or sponsored by
+  Cloudflare, Inc. "Cloudflare" and related marks are trademarks of Cloudflare, Inc.
+  All product information is sourced from public Cloudflare documentation and
+  linked at point of use.
 
 theme:
   name: material

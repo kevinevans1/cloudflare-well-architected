@@ -9,6 +9,8 @@ Pages, R2, D1, Durable Objects, Queues, Zero Trust).
 
 **Read it here:** https://kevinevans1.github.io/cloudflare-well-architected/
 
+🍁 Written and maintained by [Kevin Evans](https://github.com/kevinevans1), based in Canada.
+
 > [!IMPORTANT]
 > This is an independent project, not affiliated with or endorsed by
 > Cloudflare, Inc. See [`NOTICE.md`](NOTICE.md) for the full disclaimer.
