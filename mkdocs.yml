@@ -1,0 +1,99 @@
+site_name: Cloudflare Well-Architected
+site_description: >-
+  An independent, community-maintained set of pillars and design guidance for
+  building reliable, secure, cost-efficient, and performant workloads on Cloudflare.
+site_url: https://kevinevans1.github.io/cloudflare-well-architected/
+repo_url: https://github.com/kevinevans1/cloudflare-well-architected
+repo_name: kevinevans1/cloudflare-well-architected
+edit_uri: edit/main/docs/
+copyright: >-
+  This is an independent, community-maintained project. It is not produced by,
+  affiliated with, endorsed by, or sponsored by Cloudflare, Inc. "Cloudflare" and
+  related marks are trademarks of Cloudflare, Inc. All product information is
+  sourced from public Cloudflare documentation and linked at point of use.
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - content.code.copy
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - tables
+  - toc:
+      permalink: true
+  - attr_list
+  - md_in_html
+  - footnotes
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/kevinevans1
+  generator: false
+
+nav:
+  - Home: index.md
+  - How to Use This Framework: how-to-use.md
+  - Pillars:
+      - Overview: pillars/index.md
+      - Reliability: pillars/reliability.md
+      - Security: pillars/security.md
+      - Cost Optimization: pillars/cost-optimization.md
+      - Operational Excellence: pillars/operational-excellence.md
+      - Performance Efficiency: pillars/performance-efficiency.md
+  - Workloads:
+      - Overview: workloads/index.md
+      - Static Sites & SPAs: workloads/static-sites.md
+      - Full-Stack Apps on Workers: workloads/fullstack-workers.md
+      - APIs & Backends: workloads/apis-and-backends.md
+      - Event-Driven & Data Pipelines: workloads/event-driven-pipelines.md
+      - Zero Trust / SASE: workloads/zero-trust-sase.md
+      - Multi-CDN & Hybrid Front Door: workloads/multi-cdn-hybrid.md
+  - Design Review Checklist: design-review-checklist.md
+  - Reference:
+      - Glossary: reference/glossary.md
+      - Related Frameworks: reference/related-frameworks.md
+      - Further Reading & Sources: reference/further-reading.md
