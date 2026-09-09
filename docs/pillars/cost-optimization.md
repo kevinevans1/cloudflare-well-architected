@@ -17,9 +17,6 @@ flowchart LR
     D -->|batched, infrequent| Cheap[Low cost]
     D -->|chatty, per-component calls| Expensive[Cost multiplies with page complexity]
 
-    style Cheap fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
-    style Expensive fill:#fff3e0,stroke:#e65100,stroke-width:1px
-    style Done1 fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
 ```
 
 Every request that stops at cache is free of Worker and origin cost; every uncached request's cost is driven by how many billed operations it triggers downstream — that's the lever this pillar is about pulling deliberately.

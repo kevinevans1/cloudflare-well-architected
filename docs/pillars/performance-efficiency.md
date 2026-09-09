@@ -15,9 +15,6 @@ flowchart LR
     SP -->|yes: Worker runs near backend| O[Origin / database]
     SP -->|no: Worker stays near user| O2[Origin / database<br/>extra round trip]
 
-    style TC fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
-    style O fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
-    style O2 fill:#fff3e0,stroke:#e65100,stroke-width:1px
 ```
 
 ## Design principles

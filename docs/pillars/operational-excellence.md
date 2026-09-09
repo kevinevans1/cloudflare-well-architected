@@ -17,8 +17,6 @@ flowchart LR
     F --> G[Workers Logs, Tail Workers, Logpush]
     G -->|feeds back into| A
 
-    style B fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
-    style G fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
 ```
 
 Terraform-managed account/zone config (DNS, WAF, Load Balancing) follows the same loop in parallel — plan/review/apply instead of dashboard clicks, feeding the same observability layer.

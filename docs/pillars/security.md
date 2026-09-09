@@ -20,8 +20,6 @@ flowchart TD
     F[Internal user] -->|identity + posture| G[Access + Gateway]
     G --> E
 
-    style B fill:#fff3e0,stroke:#e65100,stroke-width:1px
-    style G fill:#fff3e0,stroke:#e65100,stroke-width:1px
 ```
 
 ## Design principles

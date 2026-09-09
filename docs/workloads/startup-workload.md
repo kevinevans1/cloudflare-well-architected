@@ -11,7 +11,6 @@ flowchart LR
     W --> D1[(D1<br/>core application data)]
     W -.->|only if genuinely needed| DO[Durable Objects]
 
-    style W fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
 ```
 
 A single Worker in front of D1 (for real relational data) and KV (for anything read-heavy and tolerant of eventual consistency) covers most early-stage products. Durable Objects are dotted because they solve a specific coordination problem — most startups don't need them on day one, and reaching for them by default adds cost and complexity for state a simpler primitive would handle.

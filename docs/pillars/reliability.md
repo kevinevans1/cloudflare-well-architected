@@ -21,8 +21,6 @@ flowchart LR
     Edge -->|no failover configured| DB
     Edge -->|via Load Balancing + health checks| LB{{Multiple origins/pools}}
 
-    style Redundant fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
-    style Your fill:#fff3e0,stroke:#e65100,stroke-width:1px
 ```
 
 ## Design principles
