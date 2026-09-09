@@ -13,8 +13,6 @@ flowchart LR
     GW --> WAI[Workers AI]
     GW --> EXT[External provider]
     W -.->|multi-step / stateful| AG[Agent<br/>Agents SDK]
-
-    style GW fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
 ```
 
 A simple RAG flow is retrieval (AI Search, backed by Vectorize) feeding context into a generation call (through AI Gateway to either Workers AI or an external model). A multi-step agent adds the Agents SDK on top, coordinating several such calls with persistent state between them.
